@@ -1,25 +1,19 @@
 {
   "name": "stylesync-cli",
   "version": "1.0.0",
-  "description": "AI-powered style translator & token guard",
+  "type": "module",
   "bin": {
     "stylesync": "./dist/index.js"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
-    "start": "tsx src/index.ts",
-    "sync": "tsx src/index.ts",
-    "init-cfg": "tsx src/index.ts --init"
-  },
-  "dependencies": {
-    "@google/genai": "^0.x.x",
-    "chalk": "^5.x.x",
-    "commander": "^12.x.x",
-    "dotenv": "^16.x.x"
-  },
-  "devDependencies": {
-    "@types/node": "^20.x.x",
-    "tsx": "^4.x.x",
-    "typescript": "^5.x.x"
+    "prepublishOnly": "npm run build",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "sync": "npm run dev -- sync",
+    "init-cfg": "npm run dev -- --init"
   }
 }
