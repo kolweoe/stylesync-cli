@@ -1,0 +1,30 @@
+{
+  "colors": {
+    "primary": "#4f46e5",
+    "surface": "#f1f5f9"
+  },
+  "radii": {
+    "sm": "sm",
+    "md": "lg",
+    "lg": "xl"
+  },
+  "spacing": {
+    "sm": "8px",
+    "md": "16px",
+    "lg": "32px"
+  },
+  "version": "1.0.0",
+  "tokens": {
+    "colors": {
+      "primary": { "value": "#4f46e5" }
+    },
+    "animations": {
+      "easing": {
+        "spring": "cubic-bezier(0.34, 1.56, 0.64, 1)"
+      },
+      "stagger": {
+        "delayStep": "100ms"
+      }
+    }
+  }
+}
